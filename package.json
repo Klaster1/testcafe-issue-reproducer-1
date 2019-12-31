@@ -1,0 +1,14 @@
+{
+  "name": "testcafe-issue-reproducer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome:headless ./fixture.js"
+  },
+  "author": "Klaster_1",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^1.7.1"
+  }
+}
