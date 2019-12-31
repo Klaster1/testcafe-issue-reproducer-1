@@ -17,7 +17,6 @@ test
 })
 ('Fail', async t => {
     await t.expect(Selector('div').withText('Welcome').visible).ok()
-    const {log} = await t.getBrowserConsoleMessages()
     await t.expect(t.ctx.logger.requests.length).eql(1)
 })
 
@@ -29,6 +28,5 @@ test
 ('Pass', async t => {
     await t.navigateTo(URL)
     await t.expect(Selector('div').withText('Welcome').visible).ok()
-    const {log} = await t.getBrowserConsoleMessages()
     await t.expect(t.ctx.logger.requests.length).eql(1)
 })
